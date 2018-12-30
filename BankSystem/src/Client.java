@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public abstract class Client {
 	private int id;
+
 	public float getComRate() {
 		return comRate;
 	}
@@ -27,7 +28,7 @@ public abstract class Client {
 	public ArrayList<Account> getAccounts() {
 		return accounts;
 	}
-	
+
 	public void setBalance(float balance) {
 		this.balance = balance;
 	}
@@ -46,13 +47,12 @@ public abstract class Client {
 
 	public void addAccount(Account a) {
 		if (accounts.contains(a)) {
-			System.err.println("Error, account already added.");
+			System.out.println("		Error, account " + a.getId() + " is already added.");
 		} else {
 			accounts.add(a);
+			System.out.println("[Account " + a.getId() + " was added]");
 		}
 	}
-
-	
 
 	public void autoUpdateAccounts() {
 		for (Account a : accounts) {

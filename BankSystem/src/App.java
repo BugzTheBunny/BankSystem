@@ -19,6 +19,7 @@ public class App {
 		c1.addAccount(b);
 		c1.addAccount(a);
 		c1.addAccount(c);
+		c1.addAccount(c);
 		c1.addAccount(e);
 		
 		//Adding the client to the bank

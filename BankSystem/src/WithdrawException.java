@@ -8,7 +8,7 @@ public class WithdrawException extends Exception {
 	}
 
 	public WithdrawException(String msg, int clientid, float currBalance, float withdrawAmmount) {
-		super("Not Enough money on you balance");
+		super("[Not Enough money on you balance]");
 		this.clientid = clientid;
 		this.currBalance = currBalance;
 		this.withdrawAmmount = withdrawAmmount;
